@@ -1,5 +1,5 @@
 {
-  "name": "gooo",
+  "name":"group_continue",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
