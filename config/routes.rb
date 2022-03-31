@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  root 'static_pages#index'
+  get 'static_pages/logout', to: 'static_pages#logout'
 end

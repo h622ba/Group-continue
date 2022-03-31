@@ -1,0 +1,32 @@
+<head>
+  <title>Groupcontinue</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag "/assets/"+controller.controller_name, media: 'all' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <%= render 'layouts/header' %>
+  <main>
+    <div class="background"></div>
+    <div class="index-text">
+      <h2>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</h2>
+    </div>
+    <div class="index-form">
+      <div class="index-form-app-title-area">
+        <h1 class="index-form-app-title">
+          <%= link_to "Group continue", '/' %>
+        </h1>
+      </div>
+      <div class="index-form-action">
+        <ul>
+          <li><%= link_to "アカウント作成", "#", class: "index-signup" %></li>
+          <li><%= link_to "ログイン", "#", class: "index-login" %></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>

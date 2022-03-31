@@ -1,0 +1,103 @@
+@import "reset";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+a {
+  color: #121212;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ------------------------------
+HEADER
+------------------------------ */
+header {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  z-index: 5;
+}
+
+.app-title {
+  position: relative;
+  left: 3%;
+  display: block;
+  font-size: 1.6rem;
+}
+
+.app-title a {
+  color: #FFAE00;
+}
+
+.app-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 110%;
+  height: 1px;
+  background-color: #3FA7C9;
+  z-index: -1;
+}
+
+.app-title::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: -11%;
+  display: inline-block;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid #FFAE00;
+}
+
+header #navi {
+  position: absolute;
+  right: 3%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header li {
+  display: block;
+  margin-left: 20px;
+  background-color: #fff;
+}
+
+header li:nth-child(1) {
+  background-color: #FFAE00;
+  border-radius: 100vh;
+}
+
+header li:nth-child(2) {
+  border-radius: 100vh;
+}
+
+.header-signup {
+  display: block;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.header-login {
+  display: block;
+  padding: 0 15px;
+  color: #121212;
+}
