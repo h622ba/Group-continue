@@ -109,4 +109,17 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { protocol: 'https', host: 'https://calm-tor-90374.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  user_name = Settings.gmail[:user_name]
+  password = Settings.gmail[:password]
+    config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com',
+    domain: 'gmail.com',
+    port:587,
+    user_name: user_name,
+    password: password,
+    authentication: :login
+  }
 end
