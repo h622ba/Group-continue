@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  root 'users#show'
-  get 'home', to: 'static_pages#index'
+  root 'groups#index'
+  get 'index', to: 'static_pages#index'
   get 'static_pages/logout', to: 'static_pages#logout'
+  resources :groups, except: [:destroy]
   devise_for :users, :controllers => {
     :registrations => 'users/registrations'
   }
