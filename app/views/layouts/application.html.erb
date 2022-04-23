@@ -15,10 +15,13 @@
   <% else %>
     <%= render 'layouts/header_not_login' %>
   <% end %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
   <main>
-    <%= yield %>
+    <div class="background"></div>
+    <div class="container">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </div>
   </main>
 </body>
 </html>
