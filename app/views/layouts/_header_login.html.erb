@@ -1,12 +1,15 @@
 <header>
   
   <h1 class="app-title">
-    <%= link_to "Group continue", '/' %>
+    <%= link_to "Group continue", root_url %>
   </h1>
   
   <nav id="navi">
     <ul>
-      <li><%= link_to "ログアウト", destroy_user_session_path, class: "header-logout", method: :delete %></li>
+      <li><%= link_to "グループ一覧", root_url, class: "header-group-nav" %></li>
+      <li><%= link_to "グループを作成する", new_group_path, class: "header-group-nav" %></li>
+      <li><%= link_to "グループに参加する", destroy_user_session_path, class: "header-group-nav" %></li>
+      <li class="header-logout-li"><%= link_to "ログアウト", destroy_user_session_path, class: "header-logout", method: :delete %></li>
     </ul>
   </nav>
   

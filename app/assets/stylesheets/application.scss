@@ -84,15 +84,20 @@ header ul {
 header li {
   display: block;
   margin-left: 20px;
-  background-color: #fff;
 }
 
-header li:nth-child(1) {
+header .header-logout-li {
   background-color: #FFAE00;
   border-radius: 100vh;
 }
 
-header li:nth-child(2) {
+header .header-signup-li {
+  background-color: #FFAE00;
+  border-radius: 100vh;
+}
+
+header .header-login-li {
+  background-color: #fff;
   border-radius: 100vh;
 }
 
@@ -109,6 +114,12 @@ header li:nth-child(2) {
 }
 
 .header-logout {
+  display: block;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.header-group-nav {
   display: block;
   padding: 0 15px;
   color: #fff;
